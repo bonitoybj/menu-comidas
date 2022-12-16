@@ -1,0 +1,52 @@
+html{
+	font-family: system-ui;
+}
+
+.wrap{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.column-3{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 1rem;
+	row-gap: 1rem;
+}
+
+.menu-resto{
+	color: #fff;
+	text-align: center;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+	display: flex;
+	flex-flow: column;
+}
+
+hr{
+	background: #ffc300;
+	height: 2.5px;
+	width: 30px;
+	border: none;
+}
+
+.precio-menu{
+	font-weight: bold;
+}
+
+.precio-menu span{
+	font-size: 2rem;
+	color: #ffc300;
+}
+
+@media(max-width:768px){
+	.column{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media(max-width:480px){
+	.column{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
